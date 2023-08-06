@@ -1,5 +1,5 @@
 ---
-title: La Palma Earthquakes
+title: La Palma Earthquake Mechanisms
 author:
   - name: Steve Purves
     orcid: 0000-0002-0760-5497
@@ -35,7 +35,7 @@ citation:
 number-sections: true
 ---
 
-## Introduction
+## Introduction {#sec-intro}
 
 ```{r}
 eruptions <- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
@@ -77,16 +77,16 @@ $$ {#eq-poisson}
 
 where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
 
-| Name                 | Year   |
-| -------------------- | ------ |
-| Current              | 2021   |
-| Teneguía             | 1971   |
-| Nambroque            | 1949   |
-| El Charco            | 1712   |
-| Volcán San Antonio   | 1677   |
-| Volcán San Martin    | 1646   |
-| Tajuya near El Paso  | 1585   |
-| Montaña Quemada      | 1492   |
+| Name                | Year |
+|---------------------|------|
+| Current             | 2021 |
+| Teneguía            | 1971 |
+| Nambroque           | 1949 |
+| El Charco           | 1712 |
+| Volcán San Antonio  | 1677 |
+| Volcán San Martin   | 1646 |
+| Tajuya near El Paso | 1585 |
+| Montaña Quemada     | 1492 |
 
 : Recent historic eruptions on La Palma {#tbl-history}
 
@@ -94,7 +94,7 @@ where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probab
 
 ![Map of La Palma](images/la-palma-map.png){#fig-map}
 
-La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map). 
+La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map).
 
 {{< embed notebooks/explore-earthquakes.qmd#fig-spatial-plot >}}
 
@@ -102,10 +102,11 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 
 ## Data & Methods {#sec-data-methods}
 
+Go back to the beginning at @sec-intro
+
 ## Conclusion
 
 ## References {.unnumbered}
 
-:::{#refs}
-
+::: {#refs}
 :::
